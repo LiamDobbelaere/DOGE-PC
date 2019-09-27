@@ -5,14 +5,15 @@
   "sprites": [
     {
       "name": "sprInu",
-      "frames": ["inu.png"]
+      "image": "inu.png"
     }
   ],
   "objects": [
     {
       "name": "objInu",
+      "sprite": "sprInu",
       "events": {
-        "tick": "x++;\n"
+        "update": "self.x++;\n"
       }
     }
   ]

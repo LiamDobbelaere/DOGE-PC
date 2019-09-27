@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="./phaser.min.js"></script>
+
+    <script>
+      var config = {
+        type: Phaser.AUTO,
+        width: 640,
+        height: 480,
+        physics: {
+          default: "arcade",
+          arcade: {
+            gravity: { y: 200 }
+          }
+        },
+        scene: {
+          preload,
+          create,
+          update
+        }
+      };
+
+      var game = new Phaser.Game(config);
+      var instances = [];
+
+      ("$DOGE_OBJECT_DEFINITIONS");
+
+      function preload() {
+        "$DOGE_LOAD_IMAGE";
+      }
+
+      function create() {
+        "$DOGE_CREATE_INSTANCES";
+      }
+
+      function update() {
+        instances.forEach(i => {
+          i.update();
+        });
+      }
+    </script>
+  </body>
+</html>
