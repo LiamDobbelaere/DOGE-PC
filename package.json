@@ -1,0 +1,28 @@
+{
+  "name": "doge-pc",
+  "version": "0.1.0",
+  "description": "The DOGE Phaser Compiler is the link between DOGE and Phaser that builds an HTML5 Phaser game from a DOGE project",
+  "main": "index.js",
+  "scripts": {
+    "build:project": "node build-project.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomDobbelaere/DOGE-PC.git"
+  },
+  "keywords": [
+    "doge",
+    "phaser",
+    "compiler"
+  ],
+  "author": "Tom Dobbelaere (Digaly)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomDobbelaere/DOGE-PC/issues"
+  },
+  "homepage": "https://github.com/TomDobbelaere/DOGE-PC#readme",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
+}

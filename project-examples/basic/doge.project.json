@@ -1,0 +1,19 @@
+{
+  "project": {
+    "name": "basic"
+  },
+  "sprites": [
+    {
+      "name": "sprInu",
+      "frames": ["inu.png"]
+    }
+  ],
+  "objects": [
+    {
+      "name": "objInu",
+      "events": {
+        "tick": "x++;\n"
+      }
+    }
+  ]
+}
