@@ -4,7 +4,9 @@
   "description": "The DOGE Phaser Compiler is the link between DOGE and Phaser that builds an HTML5 Phaser game from a DOGE project",
   "main": "index.js",
   "scripts": {
-    "build:project": "node build-project.js",
+    "project:build:watch": "nodemon --config nodemon.json --exec node build-project.js",
+    "project:build": "node build-project.js",
+    "project:run": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,11 @@
   "homepage": "https://github.com/TomDobbelaere/DOGE-PC#readme",
   "dependencies": {
     "chalk": "^2.4.2",
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "nodemon": "^1.19.2"
   }
 }

@@ -1,20 +1,5 @@
 {
   "project": {
     "name": "basic"
-  },
-  "sprites": [
-    {
-      "name": "sprInu",
-      "image": "inu.png"
-    }
-  ],
-  "objects": [
-    {
-      "name": "objInu",
-      "sprite": "sprInu",
-      "events": {
-        "update": "self.x++;\n"
-      }
-    }
-  ]
+  }
 }

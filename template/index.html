@@ -30,19 +30,19 @@
       var game = new Phaser.Game(config);
       var instances = [];
 
-      ("$DOGE_OBJECT_DEFINITIONS");
+      ("$DOGE_OBJECTS");
 
       function preload() {
-        "$DOGE_LOAD_IMAGE";
+        "$DOGE_SCENE_PRELOAD";
       }
 
       function create() {
-        "$DOGE_CREATE_INSTANCES";
+        "$DOGE_SCENE_CREATE";
       }
 
       function update() {
         instances.forEach(i => {
-          i.update();
+          i.step();
         });
       }
     </script>
